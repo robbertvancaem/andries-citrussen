@@ -29,6 +29,30 @@ header {
   position: relative;
 }
 
+header:before,
+header:after {
+  background: transparent;
+  border-bottom: 200px solid #fff;
+  bottom: -200px;
+  content: "";
+  height: 50px;
+  position: absolute;
+  z-index: 4;
+  width: 50%;
+}
+
+header:before {
+  border-radius: 0 0 0 100%;
+  border-left: 200px solid #fff;
+  left: -200px;
+}
+
+header:after {
+  border-radius: 0 0 100% 0;
+  border-right: 200px solid #fff;
+  right: -200px;
+}
+
 .content-wrapper {
   align-items: center;
   display: flex;

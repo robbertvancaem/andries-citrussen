@@ -31,6 +31,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 20px;
+  overflow: hidden;
 }
 
 ul,
@@ -47,5 +48,10 @@ li {
   font-family: "Source Sans Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #e84e2b;
+  color: #fff;
 }
 </style>
