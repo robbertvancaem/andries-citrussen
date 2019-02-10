@@ -48,7 +48,7 @@ nav {
   padding: 20px 20px;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
 }
 .logo {

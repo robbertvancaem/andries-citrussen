@@ -4,7 +4,7 @@ A hands-on-experiment to build a website with Vue.js and content served from an 
 
 ## Todo
 
-- [ ] Add title prop to Header component
+- [x] Add title prop to Header component
 - [ ] Add hover state for Menu component
 - [ ] Add support for to-be-created SubMenu component for MenuItems
 - [ ] Add Loader component with mocked API calls

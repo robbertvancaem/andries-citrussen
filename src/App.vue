@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <Menu :menuItems="menuItems" />
-    <Header />
+    <Header :title="homepageData.title" />
   </div>
 </template>
 
 <script>
-import Header from "./components/Header";
-import Menu from "./components/Menu";
+import Header from "./components/Header.vue";
+import Menu from "./components/Menu.vue";
+
 import menuItems from "./data/menuItems";
+import homepageData from "./data/homepage";
 
 export default {
   name: "app",
@@ -17,7 +19,8 @@ export default {
     Menu
   },
   data: () => ({
-    menuItems
+    menuItems,
+    homepageData
   })
 };
 </script>
