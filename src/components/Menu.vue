@@ -6,18 +6,14 @@
       </a>
     </div>
     <ul>
-      <li v-for="item in items" v-bind:key="item.key">
-        <a :href="item.url" target="_self">
-          <span>{{ item.label }}</span>
-          {{ item.label }}
-        </a>
-      </li>
+      <menu-item v-for="item in items" v-bind="item" :key="item.key" />
     </ul>
   </nav>
 </template>
 
 <script>
 import Logo from "../assets/logo.svg";
+import MenuItem from "./MenuItem.vue";
 
 export default {
   name: "app-menu",
@@ -28,7 +24,8 @@ export default {
     }
   },
   components: {
-    Logo
+    Logo,
+    MenuItem
   },
   computed: {
     items: function() {
@@ -55,25 +52,26 @@ nav {
 nav:before {
   background: #fff;
   content: "";
-  height: calc(100% + 40px);
+  height: 0;
   left: -20px;
   top: -20px;
-  transition: width 0.2s ease 0.2s;
+  transition: height 0.25s ease;
+  transition-delay: 0.2s;
   position: absolute;
-  width: 0;
+  width: calc(100% + 40px);
   z-index: -1;
 }
 nav:hover:before {
-  width: calc(100% + 40px);
-  transition: width 0.2s ease;
-}
-nav:hover li a span {
-  left: 0;
-  transition: left 0.2s ease 0.2s, color 0.2s ease;
+  height: calc(100% + 40px);
+  transition-delay: 0s;
 }
 nav:hover svg .logo-new1 {
   fill: #383230;
   transition: fill 0.2s ease;
+}
+nav:hover >>> li a:before {
+  opacity: 1;
+  transform: translateY(0);
 }
 .logo {
   width: 320px;
@@ -96,32 +94,5 @@ svg .logo-new1 {
 ul {
   display: flex;
   flex: 0 1 auto;
-}
-li {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-li:before {
-  content: "\200B";
-}
-li a {
-  color: #fff;
-  display: flex;
-  font-weight: 600;
-  overflow: hidden;
-  margin-left: 40px;
-  position: relative;
-  text-decoration: none;
-}
-li a:hover span {
-  color: #e84e2b;
-}
-li a span {
-  color: #383230;
-  left: -100%;
-  position: absolute;
-  transition: left 0.2s ease, color 0.2s ease;
 }
 </style>
