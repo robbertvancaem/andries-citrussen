@@ -1,13 +1,8 @@
 <template>
-  <li @mouseover="onMouseOver" @mouseleave="onMouseLeave">
+  <li>
     <a :href="url" :data-hover="label">
       <span>{{ label }}</span>
     </a>
-    <transition name="unfold">
-      <div v-if="showSubMenu">
-        HALLO SUBCONTENT IS DIT OFZO
-      </div>
-    </transition>
   </li>
 </template>
 
@@ -17,19 +12,6 @@ export default {
   props: {
     url: String,
     label: String
-  },
-  data: function() {
-    return {
-      showSubMenu: false
-    };
-  },
-  methods: {
-    onMouseOver: function(e) {
-      this.showSubMenu = true;
-    },
-    onMouseLeave: function(e) {
-      this.showSubMenu = false;
-    }
   }
 };
 </script>
@@ -71,13 +53,5 @@ li a:before {
   top: 0;
   transform: translateY(-50%);
   transition: all 0.5s ease;
-}
-.unfold-enter-active,
-.unfold-leave-active {
-  transition: opacity 0.5s;
-}
-.unfold-enter,
-.unfold-leave-to {
-  opacity: 0;
 }
 </style>

@@ -24,8 +24,7 @@ header {
   background: url("../assets/backgrounds/office.jpg");
   background-position: center center;
   background-size: cover;
-  height: 60vh;
-  min-height: 400px;
+  min-height: 520px;
   position: relative;
 }
 
@@ -35,22 +34,22 @@ header:after {
   border-bottom: 200px solid #fff;
   bottom: -200px;
   content: "";
-  height: 50px;
+  height: 100px;
   position: absolute;
   z-index: 4;
-  width: 50%;
+  width: calc(50% + 200px);
 }
 
 header:before {
   border-radius: 0 0 0 100%;
   border-left: 200px solid #fff;
-  left: -200px;
+  left: -400px;
 }
 
 header:after {
   border-radius: 0 0 100% 0;
   border-right: 200px solid #fff;
-  right: -200px;
+  right: -400px;
 }
 
 .content-wrapper {
