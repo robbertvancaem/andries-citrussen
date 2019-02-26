@@ -5,5 +5,8 @@ module.exports = {
     svgRule.uses.clear();
 
     svgRule.use("vue-svg-loader").loader("vue-svg-loader");
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/andries-citrussen/'
+    : '/'
 };

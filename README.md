@@ -13,6 +13,9 @@ A hands-on-experiment to build a website with Vue.js and content served from an 
 - [ ] Fetch pages/menu-items from an API
 - [ ] ...
 
+## Demo
+This project is published [here](https://robbertvancaem.github.io/andries-citrussen/)
+
 ## Project setup
 
 ```
