@@ -46,6 +46,11 @@ yarn run test
 yarn run lint
 ```
 
+### Deploy to 'gh-pages'-branch
+```
+./deploy.sh
+```
+
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).

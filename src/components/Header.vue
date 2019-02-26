@@ -24,7 +24,7 @@ header {
   background: url("../assets/backgrounds/office.jpg");
   background-position: center center;
   background-size: cover;
-  min-height: 520px;
+  height: 520px;
   position: relative;
 }
 
