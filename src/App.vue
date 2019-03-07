@@ -2,6 +2,7 @@
   <div id="app">
     <Menu :menuItems="menuItems" />
     <Header :title="homepageData.title" />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -53,5 +54,9 @@ li {
 ::selection {
   background: #e84e2b;
   color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #383230
 }
 </style>

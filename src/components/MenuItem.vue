@@ -1,8 +1,8 @@
 <template>
   <li>
-    <a :href="url" :data-hover="label">
+    <router-link :to="url" :data-hover="label">
       <span>{{ label }}</span>
-    </a>
+    </router-link>
   </li>
 </template>
 

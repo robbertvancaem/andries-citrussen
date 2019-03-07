@@ -26,6 +26,7 @@ header {
   background-size: cover;
   height: 520px;
   position: relative;
+  z-index: 1;
 }
 
 header:before,

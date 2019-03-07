@@ -4,7 +4,7 @@ export default [
     label: "Home"
   },
   {
-    url: "/diensten",
+    url: "/service",
     label: "Diensten"
   },
   {
