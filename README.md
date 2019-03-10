@@ -7,13 +7,12 @@ A hands-on-experiment to build a website with Vue.js and content served from an 
 - [x] Add title prop to Header component
 - [x] Add hover state for Menu component
 - [x] Split up Menu into Menu/MenuItem components
-- [ ] Add SubMenu component
-- [ ] Add support for to-be-created SubMenu component for MenuItems
-- [ ] Add Loader component with mocked API calls
-- [ ] Fetch pages/menu-items from an API
-- [ ] ...
+- [x] Add Vue Router
+- [ ] Improve transition between pages
+- [ ] Add styled-components
 
 ## Demo
+
 This project is published [here](https://robbertvancaem.github.io/andries-citrussen/)
 
 ## Project setup
@@ -47,6 +46,7 @@ yarn run lint
 ```
 
 ### Deploy to 'gh-pages'-branch
+
 ```
 ./deploy.sh
 ```
