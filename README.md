@@ -8,8 +8,8 @@ A hands-on-experiment to build a website with Vue.js and content served from an 
 - [x] Add hover state for Menu component
 - [x] Split up Menu into Menu/MenuItem components
 - [x] Add Vue Router
-- [ ] Improve transition between pages
-- [ ] Add styled-components
+- [x] Add styled-components
+- [ ] Add transition between routes
 
 ## Demo
 
